@@ -62,7 +62,8 @@
       "us-east-1": {"AMI": "ami-c481fad3"},
       "us-east-2": {"AMI": "ami-71ca9114"},
       "us-west-1": {"AMI": "ami-de347abe"},
-      "us-west-2": {"AMI": "ami-b04e92d0"}
+      "us-west-2": {"AMI": "ami-b04e92d0"},
+      "us-gov-west-1": {"AMI": "ami-7b4df41a"},
     }
   },
   "Resources": {
@@ -123,7 +124,7 @@
           "Statement": [{
             "Effect": "Allow",
             "Principal": {
-              "AWS":"*"  
+              "AWS":"*"
             },
             "Action": [
               "SQS:SendMessage"
